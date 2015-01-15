@@ -1,0 +1,11 @@
+{
+  "name": "semicenter",
+  "title": "line tab enter",
+  "description": "puts semicolon and enter at the end of the line",
+  "version": "0.0.1",
+  "author": "Dariusz Jakubowski <dariusz.jakubowski@gmail.com>",
+  "homepage": "https://github.com/not_yet_implemented",
+  "engines": {
+    "brackets": ">=0.31.0"
+  }
+}
