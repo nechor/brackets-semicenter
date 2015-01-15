@@ -1,2 +1,3 @@
 # brackets-semicenter
-Simply adds semicolon to end of current line and creating new line by pressing Alt+Enter.
+Puts semicolon at current line, creats and indents new line below. 
+Simple, useful.
