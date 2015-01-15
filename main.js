@@ -2,14 +2,12 @@
 /*global define, brackets, $*/
 
 define(function (require, exports, module) {
-
   'use strict';
-
   // Brackets modules
   var AppInit     = brackets.getModule('utils/AppInit'),
     EditorManager = brackets.getModule('editor/EditorManager'),
     KeyEvent      = brackets.getModule('utils/KeyEvent'),
-    PreferencesManager = brackets.getModule("preferences/PreferencesManager");
+    PreferencesManager = brackets.getModule('preferences/PreferencesManager');
   
   function getSpaceIndentation(inLine) {
     var
@@ -22,8 +20,6 @@ define(function (require, exports, module) {
     }
     return spacesString;
   }
-  
-
   
   function _keyEventHandler($event, editor, event) {
     var
