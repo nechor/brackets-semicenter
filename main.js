@@ -60,15 +60,3 @@ define(function (require, exports, module) {
 
 });
 
-
-function aaa() {
-  "use strict";
-  if (1 === 1) {
-    console.log('a');
-    if (1 === 1) {
-      console.log('a');
-      
-    }
-	
-  }
-}
