@@ -2,7 +2,7 @@
   "name": "semicenter",
   "title": "Semicenter",
   "description": "puts semicolon and enter at the end of the line",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "Dariusz Jakubowski <dariusz.jakubowski@gmail.com>",
   "homepage": "https://github.com/not_yet_implemented",
   "engines": {
