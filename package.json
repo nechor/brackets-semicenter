@@ -2,7 +2,7 @@
   "name": "semicenter",
   "title": "Semicenter",
   "description": "puts semicolon and enter at the end of the line",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "author": "Dariusz Jakubowski <dariusz.jakubowski@gmail.com>",
   "homepage": "https://github.com/nechor/brackets-semicenter",
   "engines": {

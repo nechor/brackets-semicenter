@@ -8,20 +8,37 @@ define(function (require, exports, module) {
   // Brackets modules
   var AppInit     = brackets.getModule('utils/AppInit'),
     EditorManager = brackets.getModule('editor/EditorManager'),
-    KeyEvent      = brackets.getModule('utils/KeyEvent');
+    KeyEvent      = brackets.getModule('utils/KeyEvent'),
+    PreferencesManager = brackets.getModule("preferences/PreferencesManager");
+  
+  function getSpaceIndentation(inLine) {
+    var
+      spacesString = '',
+      i = 0;
+    for (i = 0; i < inLine.length; i += 1) {
+      if (inLine[i].trim() === '') {
+        spacesString += inLine[i];
+      }
+    }
+    return spacesString;
+  }
+  
 
+  
   function _keyEventHandler($event, editor, event) {
-    var 
+    var
       cursorPos = editor.getCursorPos(),
-      document = editor.document;
+      document = editor.document,
+      currLine = document.getLine(cursorPos.line),
+      indent = getSpaceIndentation(currLine),
+      fileLang = editor.document.language._id;
     // On alt+ENTER pressed
     if (event.keyCode === KeyEvent.DOM_VK_RETURN && event.altKey) {
-      var fileLang = editor.document.language._id;
       // only for JavaScript
       if (fileLang === 'javascript') {
-        editor.setCursorPos(cursorPos.line, document.getLine(cursorPos.line).length);
+        editor.setCursorPos(cursorPos.line, currLine.length);
         cursorPos = editor.getCursorPos();
-        document.replaceRange(';\n', cursorPos);
+        document.replaceRange(';\n' + indent, cursorPos);
       }
     }
   }
@@ -42,3 +59,16 @@ define(function (require, exports, module) {
   });
 
 });
+
+
+function aaa() {
+  "use strict";
+  if (1 === 1) {
+    console.log('a');
+    if (1 === 1) {
+      console.log('a');
+      
+    }
+	
+  }
+}
