@@ -1,8 +1,8 @@
 {
   "name": "semicenter",
   "title": "Semicenter",
-  "description": "Puts semicolon at current line, creats and indents new line below. Simple, useful.",
-  "version": "0.1.1",
+  "description": "Puts semicolon at current line, creates and indents new line below. Just press Alt+Enter in js file. Simple, useful.",
+  "version": "0.1.5",
   "author": "Dariusz Jakubowski <dariusz.jakubowski@gmail.com>",
   "homepage": "https://github.com/nechor/brackets-semicenter",
   "engines": {
