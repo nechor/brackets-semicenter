@@ -1,7 +1,7 @@
 {
   "name": "brackets-semicenter",
   "title": "Semicenter",
-  "description": "ALT+ENTER - > Puts semicolon at current line, creates and indents new line below. \nALT+SEMICOLON - > Puts semicolon at current line, goes to the end of current line. \nSimple, useful.",
+  "description": "ALT+ENTER - > Puts semicolon at current line, creates and indents new line below. <br />ALT+SEMICOLON - > Puts semicolon at current line, goes to the end of current line. <br />Simple, useful.",
   "version": "0.1.6",
   "keywords": ["js, javascript, edit, editing"],
   "author": "Dariusz Jakubowski <dariusz.jakubowski@gmail.com>",
