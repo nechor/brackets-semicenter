@@ -36,7 +36,16 @@ define(function (require, exports, module) {
         cursorPos = editor.getCursorPos();
         document.replaceRange(';\n' + indent, cursorPos);
       }
-    }
+    } else { 
+      //on alt+; pressed
+      if (event.keyCode === KeyEvent.DOM_VK_SEMICOLON && event.altKey) {
+        if (fileLang === 'javascript') {
+          editor.setCursorPos(cursorPos.line, currLine.length);
+          cursorPos = editor.getCursorPos();
+          document.replaceRange(';', cursorPos);
+        }
+      }
+    } 
   }
 
   function _activeEditorChangeHandler($event, focusedEditor, lostEditor) {
