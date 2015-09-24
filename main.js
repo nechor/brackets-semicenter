@@ -31,7 +31,7 @@ define(function (require, exports, module) {
     // On alt+ENTER pressed
     if (event.keyCode === KeyEvent.DOM_VK_RETURN && event.altKey) {
       // only for JavaScript
-      if (fileLang === 'javascript') {
+      if (fileLang === 'javascript' || fileLang === 'php' || fileLang === 'html') {
         editor.setCursorPos(cursorPos.line, currLine.length);
         cursorPos = editor.getCursorPos();
         document.replaceRange(';\n' + indent, cursorPos);
@@ -39,7 +39,7 @@ define(function (require, exports, module) {
     } else { 
       //on alt+; pressed
       if (event.keyCode === KeyEvent.DOM_VK_SEMICOLON && event.altKey) {
-        if (fileLang === 'javascript') {
+        if (fileLang === 'javascript' || fileLang === 'php' || fileLang === 'html') {
           editor.setCursorPos(cursorPos.line, currLine.length);
           cursorPos = editor.getCursorPos();
           document.replaceRange(';', cursorPos);
